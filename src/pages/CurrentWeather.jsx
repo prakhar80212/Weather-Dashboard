@@ -159,6 +159,7 @@ export default function CurrentWeather() {
             icon="🌡️"
             accentColor={CHART_COLORS.rose}
             large
+            rightSlot={<TempToggle value={tempUnit} onChange={setTempUnit} />}
           />
           <MetricCard
             label="Max / Min"

@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { motion } from 'framer-motion'
 
-const MetricCard = memo(function MetricCard({ label, value, unit, sub, icon, accentColor = 'var(--accent-blue)', large = false }) {
+const MetricCard = memo(function MetricCard({ label, value, unit, sub, icon, accentColor = 'var(--accent-blue)', large = false, rightSlot }) {
   return (
     <motion.div
       className="rounded-2xl p-4"
@@ -15,11 +15,14 @@ const MetricCard = memo(function MetricCard({ label, value, unit, sub, icon, acc
         <span className="text-xs font-medium uppercase tracking-widest" style={{ color: 'var(--text-muted)', letterSpacing: '0.08em' }}>
           {label}
         </span>
-        {icon && (
-          <div className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: `${accentColor}18`, border: `1px solid ${accentColor}30` }}>
-            <span style={{ color: accentColor, fontSize: 14 }}>{icon}</span>
-          </div>
-        )}
+        <div className="flex items-center gap-2">
+          {rightSlot}
+          {icon && (
+            <div className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: `${accentColor}18`, border: `1px solid ${accentColor}30` }}>
+              <span style={{ color: accentColor, fontSize: 14 }}>{icon}</span>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="flex items-end gap-1.5">
