@@ -6,7 +6,7 @@ A responsive weather dashboard built with React + Vite, powered by the [Open-Met
 
 ## Live Demo
 
-🔗 [weatherlens.vercel.app]([https://weatherlens.vercel.app](https://weather-dashboard-zeta-seven.vercel.app/)) _(replace with your deployed URL)_
+🔗 [https://weather-dashboard-zeta-seven.vercel.app/]([https://weatherlens.vercel.app](https://weather-dashboard-zeta-seven.vercel.app/)) _(replace with your deployed URL)_
 
 ---
 
